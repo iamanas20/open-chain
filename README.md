@@ -1,9 +1,13 @@
-## TODOs
+## TODO list
 
 ⬜️ Make the website responsive.
+
 ⬜️ Make the time on the NFT count down.
+
 ⬜️ Find a decentralized waitlist service.
+
 ⬜️ Create other pages.
+
 ⬜️ Create animations.
 
 ## Why I built this project
