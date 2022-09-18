@@ -7,7 +7,7 @@ export function Testimonials() {
       <div>
         <Image src={'/quote.svg'} width="38" height="38"/>
         <p>
-          We know that we are living in a complex and stressful world especially for developers and OpenChain strives to make developers' lives better through amazing features and community.
+          We know that we are living in a complex and stressful world especially for developers and OpenChain strives to make developers&apos; lives better through amazing features and community.
         </p>
         <h3>
           Developer DAO
