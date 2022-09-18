@@ -1,0 +1,20 @@
+.features {
+  padding: 34px;
+  h3 {
+    font-size: 28px;
+    margin: 0 0 40px 0;
+  }
+
+  .featuresContainer {
+    display: grid;
+    gap: 38px;
+    .feat {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0 0 0 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

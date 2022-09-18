@@ -1,0 +1,72 @@
+.nft {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 34px 10px;
+  .nftCover {
+    border: 2px solid white;
+    padding: 18px 12px;
+    .nftHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      padding: 0 8px;
+      .nftTitle {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 500;
+        margin-right: 40px;
+      }
+      .owner {
+        display: flex;
+        align-items: center;
+        .profile {
+          height: 24px;
+          width: 24px;
+          border-radius: 24px;
+          background: linear-gradient(#da0942, #1c229e);
+          margin-right: 4px;
+        }
+        p {
+          color: rgb(219, 219, 219);
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+    .nftPhoto {
+      height: 340px;
+      width: 340px;
+      position: relative;
+    }
+    .chainData {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 18px;
+      padding: 0 8px;
+      .timeLeft, .price {
+        display: grid;
+        // gap: 12px;
+        * {
+          margin: 0;
+        }
+      }
+      .price {
+        text-align: right;
+      }
+      .time, .priceNumber {
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .timeText, .priceText {
+        font-size: 13px;
+        color: rgb(148, 148, 148);
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  padding: 0;
+
+  .main {
+    min-height: 100vh;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+  }
+}
