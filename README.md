@@ -8,6 +8,10 @@ Almost all my experience – both professionally and side projects – I've eith
 
 It was also the first time ever where I created a Hero Section art primarily in SCSS. I've usually used a ready picture asset made by better people.
 
+![image](https://user-images.githubusercontent.com/27561160/190928465-244cdba4-ce51-4a1a-b5b6-275876e01d6b.png)
+
+Used figma (Adobe figma CC 2022 (?) 💁🏻‍♂️😅) for all the assets and colors.
+
 ## Getting Started
 
 First, run the development server:
