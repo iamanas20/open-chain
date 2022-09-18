@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Why I built this project
 
 It was because I wanted to build something and get to be creative and express myself. This project had so many firsts for me, this style was unique I always wanted to do something similar. From time to time, I love to see apps and websites that have sharp edges and straight lines and punchy, confident and vibrant colors, without sacrificing the experience.
