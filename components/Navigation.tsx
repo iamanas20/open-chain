@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
-import styles from '../styles/Navbar.module.scss';
+import styles from '../styles/Navigation.module.scss';
 
 const navlinks = [
   {
