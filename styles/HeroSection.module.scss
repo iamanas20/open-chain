@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .heroSection {
   display: flex;
   align-items: center;
@@ -6,7 +8,6 @@
   border-bottom: 2px solid black;
   .leftPart {
     max-width: 750px;
-    padding-right: 88px;
     flex: 1;
     .heading {
       margin: 0;
@@ -47,6 +48,41 @@
       &:active {
         background: black;
       }
+    }
+  }
+
+  @mixin small-hero-section-style {
+    flex-direction: column;
+    text-align: center;
+    
+    .leftPart {
+      padding-right: 0;
+    }
+  }
+  
+  @include phone-only {
+    @include small-hero-section-style;
+
+    .leftPart {
+      .heading {
+        font-size: 50px;
+        line-height: 1.2;
+      }
+      .mainParagraph {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.7;    
+      }
+    }
+  }
+  @include tablet-portrait-up {
+    @include small-hero-section-style;
+  }
+  @include desktop-up {
+    flex-direction: unset;
+    text-align: unset;
+    .rightPart {
+      padding: 80px;
     }
   }
 }
