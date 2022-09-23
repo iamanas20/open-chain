@@ -35,7 +35,7 @@
     padding: 20px;
     transition: gap 200ms ease-in-out;
     position: relative;
-    z-index: 3;
+    z-index: 4;
     &:hover {
       gap: 7px;
     }
@@ -71,7 +71,7 @@
     top: 0;
     bottom: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 380px;
     right: -380px;
     transition: right 300ms cubic-bezier(.33,.2,.67,.15);
@@ -100,7 +100,7 @@
     left: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.087);
-    z-index: 1;
+    z-index: 2;
   }
 
   @mixin small-navbar-style {

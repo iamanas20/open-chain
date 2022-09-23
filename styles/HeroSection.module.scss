@@ -6,9 +6,33 @@
   justify-content: center;
   padding: 46px 48px;
   border-bottom: 2px solid black;
+  position: relative;
+  .ball {
+    height: 100px;
+    width: 100px;
+    left: 80px;
+    top: 40px;
+    background: #F02A38;
+    filter: blur(77px);
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: 140px 140px;
+  }
+  .ball2 {
+    height: 100px;
+    width: 100px;
+    right: 80px;
+    bottom: 150px;
+    background: #4CC3CC;
+    filter: blur(77px);
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: 60px 60px;
+  }
   .leftPart {
     max-width: 750px;
     flex: 1;
+    z-index: 1;
     .heading {
       margin: 0;
       padding: 0;

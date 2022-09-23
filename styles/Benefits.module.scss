@@ -3,6 +3,8 @@
 .benefits {
   display: grid;
   align-items: stretch;
+  position: relative;
+  z-index: 1;
   & > * {
     &:not(:last-child){
       border-right: 2px solid black;
