@@ -1,6 +1,6 @@
 ## TODO list
 
-⬜️ Make the website responsive.
+✅ Make the website responsive.
 
 ✅ Make the time on the NFT count down.
 
