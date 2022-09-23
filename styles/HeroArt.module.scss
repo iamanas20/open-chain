@@ -1,5 +1,6 @@
+@import './mixins.scss';
+
 .rightPart {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -77,5 +78,21 @@
         justify-content: center;
       }
     }
+  }
+
+  @mixin small-hero-art-style {
+    padding: 90px 0 60px 0;
+    display: none;
+  }
+  
+  @include phone-only {
+    @include small-hero-art-style;
+  }
+  @include tablet-portrait-up {
+    @include small-hero-art-style;
+  }
+  @include desktop-up {
+    padding: unset;
+    display: flex;
   }
 }

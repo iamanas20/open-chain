@@ -1,10 +1,37 @@
+@import './mixins.scss';
+
 .benefits {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   align-items: stretch;
   & > * {
     &:not(:last-child){
       border-right: 2px solid black;
+    }
+  }
+
+  @mixin small-testimonials-style {
+    grid-template-columns: unset;
+    & > * {
+      &:not(:last-child){
+        border-right: unset;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+
+  @include phone-only {
+    @include small-testimonials-style;
+  }
+  @include tablet-portrait-up {
+    @include small-testimonials-style;
+  }
+  @include tablet-landscape-up {
+    grid-template-columns: 1fr 1fr 1fr;
+    & > * {
+      &:not(:last-child){
+        border-right: 2px solid black;
+        border-bottom: unset;
+      }
     }
   }
 }
