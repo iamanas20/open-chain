@@ -1,3 +1,13 @@
+@import './mixins.scss';
+
+@mixin linksHover {
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .header {
   height: 90px;
   border-bottom: 2px solid black;
@@ -10,14 +20,112 @@
     font-size: 16px;
   }
   .rightLinks{
-    margin-left: auto;
     display: grid;
+    margin-left: auto;
     grid-template-columns: repeat(5, auto);
     gap: 24px;
-    a {
+    @include linksHover;
+  }
+
+  .hamburgerToggler {
+    display: grid;
+    gap: 4px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 20px;
+    transition: gap 200ms ease-in-out;
+    position: relative;
+    z-index: 3;
+    &:hover {
+      gap: 7px;
+    }
+    & > * {
+      height: 3px;
+      width: 28px;
+      background: black;
+      border-radius: 3px;
+    }
+    &.isOpenToggler {
       &:hover {
-        text-decoration: underline;
+        gap: 4px;
       }
+      & > * {
+        background: white;
+        transition: transform 400ms ease-in-out;
+        &:first-child {
+          transform: rotate(45deg) translateX(5px);
+        }
+        &:last-child {
+          transform: rotate(-45deg) translateX(5px);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .menu {
+    background: black;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    width: 380px;
+    right: -380px;
+    transition: right 300ms cubic-bezier(.33,.2,.67,.15);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    @include linksHover;
+    & > * {
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    &.isOpenMenu {
+      right: 0;
+    }
+  }
+
+  .menuOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.087);
+    z-index: 1;
+  }
+
+  @mixin small-navbar-style {
+    .hamburgerToggler {
+      display: grid;
+    }
+
+    .rightLinks{
+      display: none;
+    }
+  }
+
+  @include phone-only {
+    @include small-navbar-style;
+  }
+  @include tablet-portrait-up {
+    @include small-navbar-style;
+  }
+  @include desktop-up {
+    .hamburgerToggler {
+      display: none;
+    }
+
+    .rightLinks{
+      display: grid;
     }
   }
 }
