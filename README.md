@@ -8,7 +8,7 @@
 
 ⬜️ Create other pages.
 
-⬜️ Create animations.
+▶️ Create animations.
 
 ## Why I built this project
 
